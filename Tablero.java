@@ -1,4 +1,4 @@
-package Ajedrez;
+package IniciativaAjedrez;
 
 public class Tablero {
 	private Pieza[][] tablero = new Pieza[8][8];

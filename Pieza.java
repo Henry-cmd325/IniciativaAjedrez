@@ -1,4 +1,4 @@
-package Ajedrez;
+package IniciativaAjedrez;
 
 public abstract class Pieza {
 	Coordenada[] posiblesMovimientos;

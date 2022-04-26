@@ -1,4 +1,4 @@
-package Ajedrez;
+package IniciativaAjedrez;
 
 public class Coordenada {
 	public final int X;

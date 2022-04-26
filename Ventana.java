@@ -1,4 +1,4 @@
-package Ajedrez;
+package IniciativaAjedrez;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;

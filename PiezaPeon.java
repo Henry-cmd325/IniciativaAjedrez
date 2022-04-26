@@ -1,4 +1,4 @@
-package Ajedrez;
+package IniciativaAjedrez;
 
 public class PiezaPeon extends Pieza{
 	public PiezaPeon() {
