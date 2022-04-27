@@ -1,5 +1,6 @@
 package IniciativaAjedrez;
 
+
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
@@ -17,6 +18,7 @@ import java.awt.SystemColor;
 public class Ventana extends JFrame {
 
 	private JPanel contentPane;
+
 	private JButton btnSeleccionado = null;
 
 	private Tablero tablero = new Tablero();
