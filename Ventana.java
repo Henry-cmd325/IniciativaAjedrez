@@ -128,54 +128,119 @@ public class Ventana extends JFrame {
 		panel.add(E8);
 		
 		JButton F8 = new JButton("");
+		F8.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionNegra(e);
+			}
+		});
 		F8.setBackground(Color.BLACK);
 		panel.add(F8);
 		
 		JButton G8 = new JButton("");
+		G8.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionBlanca(e);
+			}
+		});
 		G8.setBackground(Color.WHITE);
 		panel.add(G8);
 		
 		JButton A7 = new JButton("");
+		A7.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionNegra(e);
+			}
+		});
 		A7.setBackground(Color.BLACK);
 		panel.add(A7);
 		
 		JButton B7 = new JButton("");
+		B7.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionBlanca(e);
+			}
+		});
 		B7.setBackground(Color.WHITE);
 		panel.add(B7);
 		
 		JButton C7 = new JButton("");
+		C7.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionNegra(e);
+			}
+		});
 		C7.setBackground(Color.BLACK);
 		panel.add(C7);
 		
 		JButton D7 = new JButton("");
+		D7.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionBlanca(e);
+			}
+		});
 		D7.setBackground(Color.WHITE);
 		panel.add(D7);
 		
 		JButton E7 = new JButton("");
+		E7.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionNegra(e);
+			}
+		});
 		E7.setBackground(Color.BLACK);
 		panel.add(E7);
 		
 		JButton F7 = new JButton("");
+		F7.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionBlanca(e);
+			}
+		});
 		F7.setBackground(Color.WHITE);
 		panel.add(F7);
 		
 		JButton G7 = new JButton("");
+		G7.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionNegra(e);
+			}
+		});
 		G7.setBackground(Color.BLACK);
 		panel.add(G7);
 		
 		JButton A6 = new JButton("");
+		A6.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionBlanca(e);
+			}
+		});
 		A6.setBackground(Color.WHITE);
 		panel.add(A6);
 		
 		JButton B6 = new JButton("");
+		B6.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionNegra(e);
+			}
+		});
 		B6.setBackground(Color.BLACK);
 		panel.add(B6);
 		
 		JButton C6 = new JButton("");
+		C6.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionBlanca(e);
+			}
+		});
 		C6.setBackground(Color.WHITE);
 		panel.add(C6);
 		
 		JButton D6 = new JButton("");
+		D6.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionNegra(e);
+			}
+		});
 		D6.setBackground(Color.BLACK);
 		panel.add(D6);
 		
@@ -183,51 +248,107 @@ public class Ventana extends JFrame {
 		E6.setBackground(Color.WHITE);
 		E6.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				SeleccionBlanca(e);
 			}
 		});
 		panel.add(E6);
 		
 		JButton F6 = new JButton("");
+		F6.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionNegra(e);
+			}
+		});
 		F6.setBackground(Color.BLACK);
 		panel.add(F6);
 		
 		JButton G6 = new JButton("");
+		G6.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionBlanca(e);
+			}
+		});
 		G6.setBackground(Color.WHITE);
 		panel.add(G6);
 		
 		JButton A5 = new JButton("");
+		A5.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionNegra(e);
+			}
+		});
 		A5.setBackground(Color.BLACK);
 		panel.add(A5);
 		
 		JButton B5 = new JButton("");
+		B5.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionBlanca(e);
+			}
+		});
 		B5.setBackground(Color.WHITE);
 		panel.add(B5);
 		
 		JButton C5 = new JButton("");
+		C5.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionNegra(e);
+			}
+		});
 		C5.setBackground(Color.BLACK);
 		panel.add(C5);
 		
 		JButton D5 = new JButton("");
+		D5.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionBlanca(e);
+			}
+		});
 		D5.setBackground(Color.WHITE);
 		panel.add(D5);
 		
 		JButton E5 = new JButton("");
+		E5.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionNegra(e);
+			}
+		});
 		E5.setBackground(Color.BLACK);
 		panel.add(E5);
 		
 		JButton F5 = new JButton("");
+		F5.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionBlanca(e);
+			}
+		});
 		F5.setBackground(Color.WHITE);
 		panel.add(F5);
 		
 		JButton G5 = new JButton("");
+		G5.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionNegra(e);
+			}
+		});
 		G5.setBackground(Color.BLACK);
 		panel.add(G5);
 		
 		JButton A4 = new JButton("");
+		A4.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionBlanca(e);
+			}
+		});
 		A4.setBackground(Color.WHITE);
 		panel.add(A4);
 		
 		JButton B4 = new JButton("");
+		B4.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionNegra(e);
+			}
+		});
 		B4.setBackground(Color.BLACK);
 		panel.add(B4);
 		
@@ -235,107 +356,233 @@ public class Ventana extends JFrame {
 		C4.setBackground(Color.WHITE);
 		C4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				SeleccionBlanca(e);
 			}
 		});
 		panel.add(C4);
 	
 		JButton D4 = new JButton("");
+		D4.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionNegra(e);
+			}
+		});
 		D4.setBackground(Color.BLACK);
 		panel.add(D4);
 		
 		JButton E4 = new JButton("");
+		E4.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionBlanca(e);
+			}
+		});
 		E4.setBackground(Color.WHITE);
 		panel.add(E4);
 		
 		JButton F4 = new JButton("");
+		F4.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionNegra(e);
+			}
+		});
 		F4.setBackground(Color.BLACK);
 		panel.add(F4);
 		
 		JButton G4 = new JButton("");
+		G4.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionBlanca(e);
+			}
+		});
 		G4.setBackground(Color.WHITE);
 		panel.add(G4);
 		
 		JButton A3 = new JButton("");
+		A3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionNegra(e);
+			}
+		});
 		A3.setBackground(Color.BLACK);
 		panel.add(A3);
 		
 		JButton B3 = new JButton("");
+		B3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionBlanca(e);
+			}
+		});
 		B3.setBackground(Color.WHITE);
 		panel.add(B3);
 		
 		JButton C3 = new JButton("");
+		C3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionNegra(e);
+			}
+		});
 		C3.setBackground(Color.BLACK);
 		panel.add(C3);
 		
 		JButton D3 = new JButton("");
+		D3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionBlanca(e);
+			}
+		});
 		D3.setBackground(Color.WHITE);
 		panel.add(D3);
 		
 		JButton E3 = new JButton("");
+		E3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionNegra(e);
+			}
+		});
 		E3.setBackground(Color.BLACK);
 		panel.add(E3);
 		
 		JButton F3 = new JButton("");
+		F3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionBlanca(e);
+			}
+		});
 		F3.setBackground(Color.WHITE);
 		panel.add(F3);
 		
 		JButton G3 = new JButton("");
+		G3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionNegra(e);
+			}
+		});
 		G3.setBackground(Color.BLACK);
 		panel.add(G3);
 		
 		JButton A2 = new JButton("");
+		A2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionBlanca(e);
+			}
+		});
 		A2.setBackground(Color.WHITE);
 		panel.add(A2);
 		
 		JButton B2 = new JButton("");
+		B2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionNegra(e);
+			}
+		});
 		B2.setBackground(Color.BLACK);
 		panel.add(B2);
 		
 		JButton C2 = new JButton("");
+		C2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionBlanca(e);
+			}
+		});
 		C2.setBackground(Color.WHITE);
 		panel.add(C2);
 		
 		JButton D2 = new JButton("");
+		D2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionNegra(e);
+			}
+		});
 		D2.setBackground(Color.BLACK);
 		panel.add(D2);
 		
 		JButton E2 = new JButton("");
+		E2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionBlanca(e);
+			}
+		});
 		E2.setBackground(Color.WHITE);
 		panel.add(E2);
 		
 		JButton F2 = new JButton("");
+		F2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionNegra(e);
+			}
+		});
 		F2.setBackground(Color.BLACK);
 		panel.add(F2);
 		
 		JButton G2 = new JButton("");
+		G2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionBlanca(e);
+			}
+		});
 		G2.setBackground(Color.WHITE);
 		panel.add(G2);
 		
 		JButton A1 = new JButton("");
+		A1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionNegra(e);
+			}
+		});
 		A1.setBackground(Color.BLACK);
 		panel.add(A1);
 		
 		JButton B1 = new JButton("");
+		B1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionBlanca(e);
+			}
+		});
 		B1.setBackground(Color.WHITE);
 		panel.add(B1);
 		
 		JButton C1 = new JButton("");
+		C1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionNegra(e);
+			}
+		});
 		C1.setBackground(Color.BLACK);
 		panel.add(C1);
 		
 		JButton D1 = new JButton("");
+		D1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionBlanca(e);
+			}
+		});
 		D1.setBackground(Color.WHITE);
 		panel.add(D1);
 		
 		JButton E1 = new JButton("");
+		E1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionNegra(e);
+			}
+		});
 		E1.setBackground(Color.BLACK);
 		panel.add(E1);
 		
 		JButton F1 = new JButton("");
+		F1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionBlanca(e);
+			}
+		});
 		F1.setBackground(Color.WHITE);
 		panel.add(F1);
 		
 		JButton G1 = new JButton("");
+		G1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				SeleccionNegra(e);
+			}
+		});
 		G1.setBackground(Color.BLACK);
 		panel.add(G1);
 	}
