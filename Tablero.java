@@ -4,7 +4,8 @@ public class Tablero {
 	private Pieza[][] tablero = new Pieza[8][8];
 	
 	public Tablero() {
-		
+		//Piezas negras
+		//Piezas blancas
 	}
 	
 	public void moverPieza(Coordenada coorActual, Coordenada coorNueva) {

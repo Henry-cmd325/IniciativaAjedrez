@@ -6,7 +6,6 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.BoxLayout;
@@ -18,7 +17,7 @@ public class Ventana extends JFrame {
 
 	private JPanel contentPane;
 
-	private JButton btnSeleccionado = null;
+	private Celda celdaSeleccionada = null;
 
 	private Tablero tablero = new Tablero();
 	/**
@@ -41,29 +40,29 @@ public class Ventana extends JFrame {
 	 * Create the frame.
 	 */
 	public void SeleccionBlanca(ActionEvent e) {
-		if(btnSeleccionado != null) {
-			if(btnSeleccionado.getBackground() != SystemColor.controlDkShadow) 
-				btnSeleccionado.setBackground(Color.WHITE);
+		if(celdaSeleccionada != null) {
+			if(celdaSeleccionada.getBackground() != SystemColor.controlDkShadow) 
+				celdaSeleccionada.setBackground(Color.WHITE);
 			else
-				btnSeleccionado.setBackground(Color.BLACK);	
+				celdaSeleccionada.setBackground(Color.BLACK);	
 		}
 		
-		JButton btn = (JButton)e.getSource();
-		btn.setBackground(SystemColor.activeCaption);
-		btnSeleccionado = btn;
+		Celda celda = (Celda)e.getSource();
+		celda.setBackground(SystemColor.activeCaption);
+		celdaSeleccionada = celda;
 	}
 	
 	public void SeleccionNegra(ActionEvent e) {
-			if(btnSeleccionado != null) {
-				if(btnSeleccionado.getBackground() != SystemColor.controlDkShadow) 
-					btnSeleccionado.setBackground(Color.WHITE);
+			if(celdaSeleccionada != null) {
+				if(celdaSeleccionada.getBackground() != SystemColor.controlDkShadow) 
+					celdaSeleccionada.setBackground(Color.WHITE);
 				else
-					btnSeleccionado.setBackground(Color.BLACK);	
+					celdaSeleccionada.setBackground(Color.BLACK);	
 			}
 				
-			JButton btn = (JButton)e.getSource();
-			btn.setBackground(SystemColor.controlDkShadow);
-			btnSeleccionado = btn;
+			Celda celda = (Celda)e.getSource();
+			celda.setBackground(SystemColor.controlDkShadow);
+			celdaSeleccionada = celda;
 	}
 	
 	public Ventana() {
@@ -81,7 +80,7 @@ public class Ventana extends JFrame {
 		contentPane.add(panel);
 		panel.setLayout(new GridLayout(8, 8));
 		
-		JButton A8 = new JButton("");
+		Celda A8 = new Celda("");
 		A8.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionBlanca(e);
@@ -90,7 +89,7 @@ public class Ventana extends JFrame {
 		A8.setBackground(Color.WHITE);
 		panel.add(A8);
 		
-		JButton B8 = new JButton("");
+		Celda B8 = new Celda("");
 		B8.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionNegra(e);
@@ -99,7 +98,7 @@ public class Ventana extends JFrame {
 		B8.setBackground(Color.BLACK);
 		panel.add(B8);
 		
-		JButton C8 = new JButton("");
+		Celda C8 = new Celda("");
 		C8.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionBlanca(e);
@@ -108,7 +107,7 @@ public class Ventana extends JFrame {
 		C8.setBackground(Color.WHITE);
 		panel.add(C8);
 		
-		JButton D8 = new JButton("");
+		Celda D8 = new Celda("");
 		D8.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionNegra(e);
@@ -117,7 +116,7 @@ public class Ventana extends JFrame {
 		D8.setBackground(Color.BLACK);
 		panel.add(D8);
 		
-		JButton E8 = new JButton("");
+		Celda E8 = new Celda("");
 		E8.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionBlanca(e);
@@ -126,7 +125,7 @@ public class Ventana extends JFrame {
 		E8.setBackground(Color.WHITE);
 		panel.add(E8);
 		
-		JButton F8 = new JButton("");
+		Celda F8 = new Celda("");
 		F8.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionNegra(e);
@@ -135,7 +134,7 @@ public class Ventana extends JFrame {
 		F8.setBackground(Color.BLACK);
 		panel.add(F8);
 		
-		JButton G8 = new JButton("");
+		Celda G8 = new Celda("");
 		G8.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionBlanca(e);
@@ -144,7 +143,7 @@ public class Ventana extends JFrame {
 		G8.setBackground(Color.WHITE);
 		panel.add(G8);
 		
-		JButton A7 = new JButton("");
+		Celda A7 = new Celda("");
 		A7.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionNegra(e);
@@ -153,7 +152,7 @@ public class Ventana extends JFrame {
 		A7.setBackground(Color.BLACK);
 		panel.add(A7);
 		
-		JButton B7 = new JButton("");
+		Celda B7 = new Celda("");
 		B7.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionBlanca(e);
@@ -162,7 +161,7 @@ public class Ventana extends JFrame {
 		B7.setBackground(Color.WHITE);
 		panel.add(B7);
 		
-		JButton C7 = new JButton("");
+		Celda C7 = new Celda("");
 		C7.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionNegra(e);
@@ -171,7 +170,7 @@ public class Ventana extends JFrame {
 		C7.setBackground(Color.BLACK);
 		panel.add(C7);
 		
-		JButton D7 = new JButton("");
+		Celda D7 = new Celda("");
 		D7.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionBlanca(e);
@@ -180,7 +179,7 @@ public class Ventana extends JFrame {
 		D7.setBackground(Color.WHITE);
 		panel.add(D7);
 		
-		JButton E7 = new JButton("");
+		Celda E7 = new Celda("");
 		E7.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionNegra(e);
@@ -189,7 +188,7 @@ public class Ventana extends JFrame {
 		E7.setBackground(Color.BLACK);
 		panel.add(E7);
 		
-		JButton F7 = new JButton("");
+		Celda F7 = new Celda("");
 		F7.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionBlanca(e);
@@ -198,7 +197,7 @@ public class Ventana extends JFrame {
 		F7.setBackground(Color.WHITE);
 		panel.add(F7);
 		
-		JButton G7 = new JButton("");
+		Celda G7 = new Celda("");
 		G7.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionNegra(e);
@@ -207,7 +206,7 @@ public class Ventana extends JFrame {
 		G7.setBackground(Color.BLACK);
 		panel.add(G7);
 		
-		JButton A6 = new JButton("");
+		Celda A6 = new Celda("");
 		A6.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionBlanca(e);
@@ -216,7 +215,7 @@ public class Ventana extends JFrame {
 		A6.setBackground(Color.WHITE);
 		panel.add(A6);
 		
-		JButton B6 = new JButton("");
+		Celda B6 = new Celda("");
 		B6.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionNegra(e);
@@ -225,7 +224,7 @@ public class Ventana extends JFrame {
 		B6.setBackground(Color.BLACK);
 		panel.add(B6);
 		
-		JButton C6 = new JButton("");
+		Celda C6 = new Celda("");
 		C6.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionBlanca(e);
@@ -234,7 +233,7 @@ public class Ventana extends JFrame {
 		C6.setBackground(Color.WHITE);
 		panel.add(C6);
 		
-		JButton D6 = new JButton("");
+		Celda D6 = new Celda("");
 		D6.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionNegra(e);
@@ -243,7 +242,7 @@ public class Ventana extends JFrame {
 		D6.setBackground(Color.BLACK);
 		panel.add(D6);
 		
-		JButton E6 = new JButton("");
+		Celda E6 = new Celda("");
 		E6.setBackground(Color.WHITE);
 		E6.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -252,7 +251,7 @@ public class Ventana extends JFrame {
 		});
 		panel.add(E6);
 		
-		JButton F6 = new JButton("");
+		Celda F6 = new Celda("");
 		F6.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionNegra(e);
@@ -261,7 +260,7 @@ public class Ventana extends JFrame {
 		F6.setBackground(Color.BLACK);
 		panel.add(F6);
 		
-		JButton G6 = new JButton("");
+		Celda G6 = new Celda("");
 		G6.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionBlanca(e);
@@ -270,7 +269,7 @@ public class Ventana extends JFrame {
 		G6.setBackground(Color.WHITE);
 		panel.add(G6);
 		
-		JButton A5 = new JButton("");
+		Celda A5 = new Celda("");
 		A5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionNegra(e);
@@ -279,7 +278,7 @@ public class Ventana extends JFrame {
 		A5.setBackground(Color.BLACK);
 		panel.add(A5);
 		
-		JButton B5 = new JButton("");
+		Celda B5 = new Celda("");
 		B5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionBlanca(e);
@@ -288,7 +287,7 @@ public class Ventana extends JFrame {
 		B5.setBackground(Color.WHITE);
 		panel.add(B5);
 		
-		JButton C5 = new JButton("");
+		Celda C5 = new Celda("");
 		C5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionNegra(e);
@@ -297,7 +296,7 @@ public class Ventana extends JFrame {
 		C5.setBackground(Color.BLACK);
 		panel.add(C5);
 		
-		JButton D5 = new JButton("");
+		Celda D5 = new Celda("");
 		D5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionBlanca(e);
@@ -306,7 +305,7 @@ public class Ventana extends JFrame {
 		D5.setBackground(Color.WHITE);
 		panel.add(D5);
 		
-		JButton E5 = new JButton("");
+		Celda E5 = new Celda("");
 		E5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionNegra(e);
@@ -315,7 +314,7 @@ public class Ventana extends JFrame {
 		E5.setBackground(Color.BLACK);
 		panel.add(E5);
 		
-		JButton F5 = new JButton("");
+		Celda F5 = new Celda("");
 		F5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionBlanca(e);
@@ -324,7 +323,7 @@ public class Ventana extends JFrame {
 		F5.setBackground(Color.WHITE);
 		panel.add(F5);
 		
-		JButton G5 = new JButton("");
+		Celda G5 = new Celda("");
 		G5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionNegra(e);
@@ -333,7 +332,7 @@ public class Ventana extends JFrame {
 		G5.setBackground(Color.BLACK);
 		panel.add(G5);
 		
-		JButton A4 = new JButton("");
+		Celda A4 = new Celda("");
 		A4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionBlanca(e);
@@ -342,7 +341,7 @@ public class Ventana extends JFrame {
 		A4.setBackground(Color.WHITE);
 		panel.add(A4);
 		
-		JButton B4 = new JButton("");
+		Celda B4 = new Celda("");
 		B4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionNegra(e);
@@ -351,7 +350,7 @@ public class Ventana extends JFrame {
 		B4.setBackground(Color.BLACK);
 		panel.add(B4);
 		
-		JButton C4 = new JButton("");
+		Celda C4 = new Celda("");
 		C4.setBackground(Color.WHITE);
 		C4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -360,7 +359,7 @@ public class Ventana extends JFrame {
 		});
 		panel.add(C4);
 	
-		JButton D4 = new JButton("");
+		Celda D4 = new Celda("");
 		D4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionNegra(e);
@@ -369,7 +368,7 @@ public class Ventana extends JFrame {
 		D4.setBackground(Color.BLACK);
 		panel.add(D4);
 		
-		JButton E4 = new JButton("");
+		Celda E4 = new Celda("");
 		E4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionBlanca(e);
@@ -378,7 +377,7 @@ public class Ventana extends JFrame {
 		E4.setBackground(Color.WHITE);
 		panel.add(E4);
 		
-		JButton F4 = new JButton("");
+		Celda F4 = new Celda("");
 		F4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionNegra(e);
@@ -387,7 +386,7 @@ public class Ventana extends JFrame {
 		F4.setBackground(Color.BLACK);
 		panel.add(F4);
 		
-		JButton G4 = new JButton("");
+		Celda G4 = new Celda("");
 		G4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionBlanca(e);
@@ -396,7 +395,7 @@ public class Ventana extends JFrame {
 		G4.setBackground(Color.WHITE);
 		panel.add(G4);
 		
-		JButton A3 = new JButton("");
+		Celda A3 = new Celda("");
 		A3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionNegra(e);
@@ -405,7 +404,7 @@ public class Ventana extends JFrame {
 		A3.setBackground(Color.BLACK);
 		panel.add(A3);
 		
-		JButton B3 = new JButton("");
+		Celda B3 = new Celda("");
 		B3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionBlanca(e);
@@ -414,7 +413,7 @@ public class Ventana extends JFrame {
 		B3.setBackground(Color.WHITE);
 		panel.add(B3);
 		
-		JButton C3 = new JButton("");
+		Celda C3 = new Celda("");
 		C3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionNegra(e);
@@ -423,7 +422,7 @@ public class Ventana extends JFrame {
 		C3.setBackground(Color.BLACK);
 		panel.add(C3);
 		
-		JButton D3 = new JButton("");
+		Celda D3 = new Celda("");
 		D3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionBlanca(e);
@@ -432,7 +431,7 @@ public class Ventana extends JFrame {
 		D3.setBackground(Color.WHITE);
 		panel.add(D3);
 		
-		JButton E3 = new JButton("");
+		Celda E3 = new Celda("");
 		E3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionNegra(e);
@@ -441,7 +440,7 @@ public class Ventana extends JFrame {
 		E3.setBackground(Color.BLACK);
 		panel.add(E3);
 		
-		JButton F3 = new JButton("");
+		Celda F3 = new Celda("");
 		F3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionBlanca(e);
@@ -450,7 +449,7 @@ public class Ventana extends JFrame {
 		F3.setBackground(Color.WHITE);
 		panel.add(F3);
 		
-		JButton G3 = new JButton("");
+		Celda G3 = new Celda("");
 		G3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionNegra(e);
@@ -459,7 +458,7 @@ public class Ventana extends JFrame {
 		G3.setBackground(Color.BLACK);
 		panel.add(G3);
 		
-		JButton A2 = new JButton("");
+		Celda A2 = new Celda("");
 		A2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionBlanca(e);
@@ -468,7 +467,7 @@ public class Ventana extends JFrame {
 		A2.setBackground(Color.WHITE);
 		panel.add(A2);
 		
-		JButton B2 = new JButton("");
+		Celda B2 = new Celda("");
 		B2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionNegra(e);
@@ -477,7 +476,7 @@ public class Ventana extends JFrame {
 		B2.setBackground(Color.BLACK);
 		panel.add(B2);
 		
-		JButton C2 = new JButton("");
+		Celda C2 = new Celda("");
 		C2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionBlanca(e);
@@ -486,7 +485,7 @@ public class Ventana extends JFrame {
 		C2.setBackground(Color.WHITE);
 		panel.add(C2);
 		
-		JButton D2 = new JButton("");
+		Celda D2 = new Celda("");
 		D2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionNegra(e);
@@ -495,7 +494,7 @@ public class Ventana extends JFrame {
 		D2.setBackground(Color.BLACK);
 		panel.add(D2);
 		
-		JButton E2 = new JButton("");
+		Celda E2 = new Celda("");
 		E2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionBlanca(e);
@@ -504,7 +503,7 @@ public class Ventana extends JFrame {
 		E2.setBackground(Color.WHITE);
 		panel.add(E2);
 		
-		JButton F2 = new JButton("");
+		Celda F2 = new Celda("");
 		F2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionNegra(e);
@@ -513,7 +512,7 @@ public class Ventana extends JFrame {
 		F2.setBackground(Color.BLACK);
 		panel.add(F2);
 		
-		JButton G2 = new JButton("");
+		Celda G2 = new Celda("");
 		G2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionBlanca(e);
@@ -522,7 +521,7 @@ public class Ventana extends JFrame {
 		G2.setBackground(Color.WHITE);
 		panel.add(G2);
 		
-		JButton A1 = new JButton("");
+		Celda A1 = new Celda("");
 		A1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionNegra(e);
@@ -531,7 +530,7 @@ public class Ventana extends JFrame {
 		A1.setBackground(Color.BLACK);
 		panel.add(A1);
 		
-		JButton B1 = new JButton("");
+		Celda B1 = new Celda("");
 		B1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionBlanca(e);
@@ -540,7 +539,7 @@ public class Ventana extends JFrame {
 		B1.setBackground(Color.WHITE);
 		panel.add(B1);
 		
-		JButton C1 = new JButton("");
+		Celda C1 = new Celda("");
 		C1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionNegra(e);
@@ -549,7 +548,7 @@ public class Ventana extends JFrame {
 		C1.setBackground(Color.BLACK);
 		panel.add(C1);
 		
-		JButton D1 = new JButton("");
+		Celda D1 = new Celda("");
 		D1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionBlanca(e);
@@ -558,7 +557,7 @@ public class Ventana extends JFrame {
 		D1.setBackground(Color.WHITE);
 		panel.add(D1);
 		
-		JButton E1 = new JButton("");
+		Celda E1 = new Celda("");
 		E1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionNegra(e);
@@ -567,7 +566,7 @@ public class Ventana extends JFrame {
 		E1.setBackground(Color.BLACK);
 		panel.add(E1);
 		
-		JButton F1 = new JButton("");
+		Celda F1 = new Celda("");
 		F1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionBlanca(e);
@@ -576,7 +575,7 @@ public class Ventana extends JFrame {
 		F1.setBackground(Color.WHITE);
 		panel.add(F1);
 		
-		JButton G1 = new JButton("");
+		Celda G1 = new Celda("");
 		G1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				SeleccionNegra(e);
