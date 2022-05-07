@@ -22,6 +22,7 @@ public class Celda extends JButton{
 				index++;
 			}
 		}
+		numeroCelda++;
 	}
 	
 	
